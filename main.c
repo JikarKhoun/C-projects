@@ -11,6 +11,6 @@ int main() {
     printf("Goodbye!\n");
     printf("Have a great day!\n");
         printf("Have a great day!\n");
-printf("12345\n");
+printf("I deleted a line of numbers\n");
     return 0;
 }
