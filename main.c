@@ -1,16 +1,15 @@
 #include <stdio.h>
-int main() {
-
-    int a; int b;
-    printf("Enter two integers: ");
-    scanf("%d %d", &a, &b);
-        int sum = a + b;
-
-    printf("The sum of %d and %d is %d\n", a, b, sum);
-    printf("Thanks for using the program!\n");
-    printf("Goodbye!\n");
-    printf("Have a great day!\n");
-        printf("Have a great day!\n");
-printf("I deleted a line of numbers\n");
-    return 0;
+ 
+ 
+ 
+int main(void) {
+ int a, b, sum;
+ 
+ printf("Give 1. number: ");
+ scanf("%d", &a); // User types first number
+ printf("Give 2. number: ");
+ scanf("%d", &b); // User types second number
+ sum = a + b;
+ printf("The sum is = %d\n", sum);
+ return 0;
 }
