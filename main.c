@@ -11,6 +11,6 @@ int main() {
     printf("Goodbye!\n");
     printf("Have a great day!\n");
         printf("Have a great day!\n");
-
+printf("123456\n");
     return 0;
 }
