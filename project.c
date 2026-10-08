@@ -1,5 +1,4 @@
 #include <stdio.h>
- 
 int main(void) {
  int a, b, sum;
  printf("Give 1. number: ");
