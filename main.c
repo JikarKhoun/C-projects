@@ -1,23 +1,27 @@
 #include <stdio.h>
 
 int main() {
+    char name[50];
     char phone[20];
+
+    printf("Enter your name: ");
+    scanf("%49s", name);
 
     printf("Enter your phone number: ");
     scanf("%19s", phone);
 
-    FILE *file = fopen("phone.txt", "a");
+    FILE *file = fopen("users.txt", "a");
 
     if (file == NULL) {
         printf("Error opening file.\n");
         return 1;
     }
 
-    fprintf(file, "%s\n", phone);
+    fprintf(file, "Name: %s | Phone: %s\n", name, phone);
 
     fclose(file);
 
-    printf("Phone number saved!\n");
+    printf("Information saved!\n");
 
     return 0;
 }
