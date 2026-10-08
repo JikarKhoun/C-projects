@@ -1,12 +1,23 @@
 #include <stdio.h>
- 
-int main(void) {
- int a, b, sum;
- printf("Give 1. number: ");
- scanf("%d", &a); // User types first number
- printf("Give 2. number: ");
- scanf("%d", &b); // User types second number
- sum = a + b;
- printf("The sum is = %d\n", sum);
- return 0;
+
+int main() {
+    char phone[20];
+
+    printf("Enter your phone number: ");
+    scanf("%19s", phone);
+
+    FILE *file = fopen("phone.txt", "a");
+
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    fprintf(file, "%s\n", phone);
+
+    fclose(file);
+
+    printf("Phone number saved!\n");
+
+    return 0;
 }
