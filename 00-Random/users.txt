@@ -1,7 +1,0 @@
-Name: Jikar | Phone: 5555
-Name: Birhan | Phone: 6666
-Name: Dalkash | Phone: 66845
-Name: Bashar | Phone: 999999
-Name: Merkan | Phone: 888888
-Name: New | Phone: name
-Name: name | Phone: 55555
