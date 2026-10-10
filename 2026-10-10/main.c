@@ -1,23 +1,38 @@
 #include <stdio.h>
 
+int find_min(int array[], int length);
+
+
+
 int main() {
-   int myarray [] = {5, 9, 10, 11, 4, 3, 1, 6, 7};
-   int min;
+   int myarray1 [] = {5, 9, 10, 11, 4, 3, 1, 6, 7};
+  int myarray2  [] = {2, 5, 9, 2, 5, 3, 0};
 
-  min = myarray [0];
-  for (int i = 1; i < 9; i++)
-       {
 
-        printf("Checking myarray [%d] = %d\n", i, myarray [i]);
-        if (myarray [i] < min ) 
-        
-       {
-        min = myarray [i]; 
-        printf("New min found: %d\n", min);
-        }
-       }
+  int min1 = find_min(myarray1, 9);
+  int min2 = find_min(myarray2, 7);
 
-    printf("Minimum value in the array is: %d\n", min);
+    printf("min1: %d\n", min1);
+    printf("min2: %d\n", min2);
 
     return 0;
+}
+
+
+
+
+
+int find_min(int array[], int length) 
+{
+     int min;
+
+  min = array [0];
+  for (int i = 1; i < length; i++)
+        {
+        if (array [i] < min ) 
+        {
+        min = array [i]; 
+        }
+        }
+        return min;
 }
